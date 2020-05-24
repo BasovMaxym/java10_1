@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #6A5ACD;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ComboBox fx:id="ComboBoxPrint" layoutX="275.0" layoutY="120.0" prefWidth="150.0">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="0" />
+                  <String fx:value="1" />
+                  <String fx:value="2" />
+                  <String fx:value="3" />
+                  <String fx:value="4" />
+                  <String fx:value="5" />
+                  <String fx:value="6" />
+                  <String fx:value="7" />
+                  <String fx:value="8" />
+                  <String fx:value="9" />
+              </FXCollections>
+          </items>
+      </ComboBox>
+      <TextArea fx:id="TextAreaResult" editable="false" layoutX="181.0" layoutY="188.0" prefHeight="246.0" prefWidth="338.0" />
+      <Label layoutX="298.0" layoutY="59.0" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: FFFFFF;" text="Set value" textAlignment="CENTER">
+         <font>
+            <Font name="Lucida Sans Unicode" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
